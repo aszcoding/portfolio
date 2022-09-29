@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>My Portfolio</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,7 +18,7 @@
               <ul>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="https://us.docworkspace.com/d/sIIS9s85AiMO8mQY">Resume</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
             <div class="controls">
@@ -34,22 +34,31 @@
       <main>
         <section class="bio">
             <div>
-                <img class="profile-img" src="imgs\BellaGrayPhoto-3835 Cropped (2).jpg">
-
+                <img class="profile-img" src="imgs\BellaGrayPhoto-3835 Cropped (2).jpg" alt="Ashley sitting with her dog">
                 <h2>Hi! I'm Ashley Serrano-Ziel. I'm a Front-End Developer.</h2>
                     <p> In the Fall of 2021, I took a free introductory course to front end development through Skillcrush, and I was hooked. There was no doubt in my mind that I wanted to be a front end developer. I thoroughly enjoy using various problem solving strategies and research to create functional and responsive websites.
                     I work through JavaScript challenges on CodeWars, and I've completed quite a few projects on Frontend Mentor to continue to strengthen my HTML5/CSS3/JavaScript skills. </p>
 
                     <p>In my spare time, I really enjoy playing mystery games and escape rooms. They require creative problem solving /thinking outside of the box, and that's what keeps me coming back for more. I love a good puzzle! 🧐</p>
-                  
-                  <div class="skills"> 
-                    <h3>Languages:</h3> HTML5, CSS3, JavaScript, PHP, SQL 
-                    <h3>Frameworks:</h3> Bootstrap
-                    <h3>OS:</h3> Windows 10
-                    <h3>Version Control Systems:</h3> Git
+                <div class="skills">
+                  <div class="container mt-3"> 
+                    <h3>Languages:</h3> 
+                      <p>HTML5, CSS3, JavaScript, PHP, SQL</p> 
+                    <h3>Frameworks:</h3> 
+                      <p>Bootstrap</p>
+                    <h3>RDBMS:</h3>
+                      <p>MySQL</p>
                   </div>
+                  <div class="container mt-3"> 
+                    <h3>OS:</h3> 
+                      <p>Windows 10</p>
+                    <h3>Servers:</h3> 
+                      <p>Apache</p>
+                    <h3>Version Control Systems:</h3> 
+                      <p>Git</p>
+                  </div>
+                </div>
 
-                <a class="btn" href="#portfolio">Check Out My Work</a>
             </div>
         </section>
 
@@ -64,7 +73,7 @@
                         <li>Fetch movie data from an API using axios</li>
                         <li>Use debounce function to delay autocomplete function in the search boxes</li>
                     </ul>
-                    <a href="https://aszcoding.github.io/movie-comparison/">Live Site</a>
+                    <a class="btn" href="https://aszcoding.github.io/movie-comparison/">Live Site</a>
                 </div>
                  <img class="article-img" src="imgs/movie_comparison_screenshot.JPG" alt="Screenshot of movie comparison app">
                 </article>
@@ -75,9 +84,8 @@
                     <strong>June 2022</strong>
                     <ul>
                         <li>Keep rating confirmation card hidden until a triggering event occurs</li>
-                        <li>Accomplishment 2</li>
                     </ul>
-                        <a href="https://aszcoding.github.io/interactive-rating-component">Live Site</a>
+                        <a class="btn" href="https://aszcoding.github.io/interactive-rating-component">Live Site</a>
                     </div>
                      <img class="article-img" src="imgs/interactive_rating_card_screenshot.JPG" alt="Screenshot of interactive rating card site">
             </article>
@@ -90,7 +98,7 @@
                         <li>Created a responsive site with semantic code that adheres to W3C and Section 508 requirements</li>
                         <li>Received perfect scores from 5 separate reviewers</li>
                     </ul>
-                        <a href="https://aszcoding.github.io/">Live Site</a>
+                        <a class="btn" href="https://aszcoding.github.io/">Live Site</a>
                     </div>
                      <img class="article-img" src="imgs/dog_daycare_screenshot.JPG" alt="Screenshot of dog daycare website">
             </article>
@@ -101,13 +109,14 @@
             <h2>Contact Me</h2>
             <form class="row g-3" action="https://formsubmit.co/182b634afabaaba075587736438ddb97" method="POST"> 
               <!-- Honeypot -->
-              <input type="text" name="_honey" style="display: none;">
+              <input type="text" aria-hidden="true" name="company_name" style="display: none;" autocomplete="off">
 
               <!-- Disable Captcha -->
               <input type="hidden" name="_captcha" value="false">
 
+              <!-- Success Message Link -->
               <input type="hidden" name="_next" value="https://aszcoding.github.io/portfolio/success.html">
-              
+
               <div class="col-md-6">
                 <label for="firstName" class="form-label">First Name</label>
                 <input type="text" class="form-control" name="First&nbsp;Name" id="firstName" required>
