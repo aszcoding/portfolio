@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Sora:wght@700&family=Work+Sans:ital,wght@0,400;0,700;1,600&display=swap">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/brands.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/solid.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="toggle-switch.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+              <h1>Ashley Serrano-Ziel</h1>
+              <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="https://us.docworkspace.com/d/sIIS9s85AiMO8mQY">Resume</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="controls">
+              <label class="toggle-switch">
+                Dark Mode
+                <input type="checkbox" id="dark-mode-toggle">
+                <div class="toggle-switch-border">
+                  <div class="toggle-switch-dot"></div>
+                </div>
+              </label>
+            </div>
+          </header>
+      <main>
+        <section class="bio">
+            <div>
+                <img class="profile-img" src="imgs\BellaGrayPhoto-3835 Cropped (2).jpg">
+
+                <h2>Hi! I'm Ashley Serrano-Ziel. I'm a Front-End Developer.</h2>
+                    <p> In the Fall of 2021, I took a free introductory course to front end development through Skillcrush, and I was hooked. There was no doubt in my mind that I wanted to be a front end developer. I thoroughly enjoy using various problem solving strategies and research to create functional and responsive websites.
+                    I work through JavaScript challenges on CodeWars, and I've completed quite a few projects on Frontend Mentor to continue to strengthen my HTML5/CSS3/JavaScript skills. </p>
+
+                    <p>In my spare time, I really enjoy playing mystery games and escape rooms. They require creative problem solving /thinking outside of the box, and that's what keeps me coming back for more. I love a good puzzle! 🧐</p>
+                  
+                  <div class="skills"> 
+                    <h3>Languages:</h3> HTML5, CSS3, JavaScript, PHP, SQL 
+                    <h3>Frameworks:</h3> Bootstrap
+                    <h3>OS:</h3> Windows 10
+                    <h3>Version Control Systems:</h3> Git
+                  </div>
+
+                <a class="btn" href="#portfolio">Check Out My Work</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="recent-work">
+        <h2>Recent Work</h2>
+            <article>
+                <div>
+                    <h3>Movie Comparison App</h3>
+                    <p>This app will compare 2 movies and show you which is better in terms of number of awards it has won/was nominated for, box office dollars, metascore, IMDB rating, and IMDB votes. </p></p>
+                    <strong>September 2022</strong>
+                    <ul>
+                        <li>Fetch movie data from an API using axios</li>
+                        <li>Use debounce function to delay autocomplete function in the search boxes</li>
+                    </ul>
+                    <a href="https://aszcoding.github.io/movie-comparison/">Live Site</a>
+                </div>
+                 <img class="article-img" src="imgs/movie_comparison_screenshot.JPG" alt="Screenshot of movie comparison app">
+                </article>
+            <article>
+                <div>
+                    <h3>Interactive Rating Component</h3>
+                    <p>This is a coding challenge I completed on Frontend Mentor. The user selects a rating, clicks submit, and a new page loads that shows what your rating was and thanks you for taking the time to leave a review.  </p></p>
+                    <strong>June 2022</strong>
+                    <ul>
+                        <li>Keep rating confirmation card hidden until a triggering event occurs</li>
+                        <li>Accomplishment 2</li>
+                    </ul>
+                        <a href="https://aszcoding.github.io/interactive-rating-component">Live Site</a>
+                    </div>
+                     <img class="article-img" src="imgs/interactive_rating_card_screenshot.JPG" alt="Screenshot of interactive rating card site">
+            </article>
+            <article>
+                <div>
+                    <h3>Dog Daycare Website</h3>
+                    <p>I'm EXTREMELY passionate about dogs. 🐶🐾 So much so, that I created a dog daycare website using a Bootstrap template for my final course project.</p>
+                    <strong>January 2022</strong>
+                    <ul>
+                        <li>Created a responsive site with semantic code that adheres to W3C and Section 508 requirements</li>
+                        <li>Received perfect scores from 5 separate reviewers</li>
+                    </ul>
+                        <a href="https://aszcoding.github.io/">Live Site</a>
+                    </div>
+                     <img class="article-img" src="imgs/dog_daycare_screenshot.JPG" alt="Screenshot of dog daycare website">
+            </article>
+        </section>
+
+        <section id="contact" class="contact-me">
+          <div class="container mt-5">
+            <h2>Contact Me</h2>
+            <form class="row g-3" action="https://formsubmit.co/ashley.serranoziel@gmail.com" method="POST"> 
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" required>
+              </div>
+              <div class="col-md-8">
+                <label for="emailInfo" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInfo" required>
+              </div>
+              <div class="col-md-4">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phoneNumber" placeholder="+1 (415) 867-5309">
+              </div>
+              <div class="col-md-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+              </div>
+              <div class="col-md-12">
+                <button type="submit" class="btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+        <footer>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/ashley-serrano-ziel-375bb0b1/">
+                  LinkedIn
+                  <span class="link-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://us.docworkspace.com/d/sIIS9s85AiMO8mQY">
+                  Resume
+                  <span class="link-icon">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/aszcoding">
+                  GitHub
+                  <span class="link-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copywright">© 2022 Ashley Serrano-Ziel</p>
+          </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
